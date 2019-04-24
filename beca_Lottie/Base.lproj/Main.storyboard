@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9dd-V9-WEE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="43y-Xm-9Xp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9dd-V9-WEE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LBZ-A5-UPU">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="e0j-mV-ngm" kind="relationship" relationship="rootViewController" id="pTu-90-opD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ic-nB-szn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="116"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="piN-U3-xds">
+            <objects>
+                <viewController id="e0j-mV-ngm" customClass="ViewController" customModule="beca_Lottie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y4G-0o-uEI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YEl-WN-nb6" customClass="LOTAnimatedControl">
+                                <rect key="frame" x="16" y="20" width="350" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.73282527890000004" green="0.77238953119999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uib-of-vGc" customClass="LOTAnimatedSwitch">
+                                <rect key="frame" x="0.0" y="221" width="187.5" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43493981660930114" green="0.38949343207149856" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d8Z-jX-y1G">
+                                <rect key="frame" x="187" y="221" width="188" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.31725227676720813" blue="0.39373126377477041" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cc-ce-iK0">
+                                <rect key="frame" x="8" y="545" width="359" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="IpS-0Z-fOJ"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Rsb-g9-N3b" kind="show" id="GFo-g4-18d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jPb-iO-Jds" firstAttribute="bottom" secondItem="9cc-ce-iK0" secondAttribute="bottom" constant="62" id="KvF-fk-leg"/>
+                            <constraint firstItem="9cc-ce-iK0" firstAttribute="leading" secondItem="jPb-iO-Jds" secondAttribute="leading" constant="8" id="utj-J5-hOa"/>
+                            <constraint firstItem="jPb-iO-Jds" firstAttribute="trailing" secondItem="9cc-ce-iK0" secondAttribute="trailing" constant="8" id="xHC-Ob-Mu9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jPb-iO-Jds"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hGV-Ti-SX3"/>
+                    <connections>
+                        <outlet property="switchButton" destination="uib-of-vGc" id="OcK-1v-xHP"/>
+                        <outlet property="viewAnimada" destination="YEl-WN-nb6" id="Yth-3y-jbv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7mM-Zk-hTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821.60000000000002" y="115.59220389805098"/>
+        </scene>
+        <!--Scroll Animation-->
+        <scene sceneID="8Xa-JU-Uve">
+            <objects>
+                <viewController id="Rsb-g9-N3b" customClass="ScrollAnimation" customModule="beca_Lottie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wer-Zd-yQo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1t8-ys-Iii" customClass="LOTAnimatedControl">
+                                <rect key="frame" x="53" y="207" width="267" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43493981659999997" green="0.38949343209999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOu-dl-IDh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.43493981659999997" green="0.38949343209999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="eOu-dl-IDh" firstAttribute="leading" secondItem="tlF-ch-Lu9" secondAttribute="leading" id="bwA-TJ-juD"/>
+                            <constraint firstItem="tlF-ch-Lu9" firstAttribute="trailing" secondItem="eOu-dl-IDh" secondAttribute="trailing" id="c4g-ua-xZt"/>
+                            <constraint firstItem="tlF-ch-Lu9" firstAttribute="bottom" secondItem="eOu-dl-IDh" secondAttribute="bottom" id="qcA-rY-CQw"/>
+                            <constraint firstItem="eOu-dl-IDh" firstAttribute="top" secondItem="tlF-ch-Lu9" secondAttribute="top" id="zzi-eA-ZAl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tlF-ch-Lu9"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="eOu-dl-IDh" id="d6t-TL-Xgr"/>
+                        <outlet property="viewAnimation" destination="1t8-ys-Iii" id="Pmq-UX-hWC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ous-9D-fCD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701.5999999999999" y="115.59220389805098"/>
+        </scene>
+    </scenes>
+</document>

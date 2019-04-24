@@ -1,0 +1,6 @@
+framework module Pods_beca_Lottie {
+  umbrella header "Pods-beca_Lottie-umbrella.h"
+
+  export *
+  module * { export * }
+}
